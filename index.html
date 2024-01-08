@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion  del DOM</title>
+</head>
+<body>
+    <!--Cuando se tiene codigo html dentro de un form, este interpretara el ultimo boton que haya con uno de tipo submit, el cual es un boton que recargara la pagina para 
+    enviarle algo al formulario-->
+    <form id="formulario">
+        <H1 id="IdBienvenida">Bienvenidos a mi pagina calculadora</H1>
+        <h2 id="IdPresentacion">Espero les guste</h2>
+        <p>Suma de valores</p>
+        <input id="idInput1" placeholder="Primer valor">
+        <input id="idInput2" placeholder="Segundo valor">
+        <br><br>
+        <!--Otra formar de evitar de que el formulario tome el boton como tipo submit es es poner el type="button" en el boton y asi no sera necesario
+        usar un event.preventDefault(); en el codigo de javascript-->
+        <button id="btnSuma">Suma</button> <!--onclick para botones, onchange para inputs y onsubmit en formularios-->
+        <p id="resultado"></p>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
